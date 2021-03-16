@@ -12,6 +12,8 @@ class CartaCasacore < Formula
   depends_on "gcc"
   depends_on "gsl"
   depends_on "hdf5"
+  depends_on "lapack" # for linux
+  depends_on "openblas" # for linux
   depends_on "wcslib"
 
   def install
