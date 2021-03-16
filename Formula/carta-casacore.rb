@@ -15,7 +15,7 @@ class CartaCasacore < Formula
   depends_on "wcslib"
 
   def install
-    mkdir "/usr/local/share/casacore/data" do
+    mkdir_p "/usr/local/share/casacore/data" do
       system "svn co https://svn.cv.nrao.edu/svn/casa-data/distro/ephemerides/"
       system "svn co https://svn.cv.nrao.edu/svn/casa-data/distro/geodetic/"
     end
